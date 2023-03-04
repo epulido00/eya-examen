@@ -21,7 +21,7 @@ class Search extends Component
                 ->orwhere('email', 'like', '%' . $this->search . '%')
                 ->orwhere('telephone', 'like', '%' . $this->search . '%')
                 ->orwhere('content', 'like', '%' . $this->search . '%')
-                ->paginate(2)
+                ->paginate(15)
         ]);
     }
 }
